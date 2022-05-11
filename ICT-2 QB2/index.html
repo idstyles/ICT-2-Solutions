@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>E-Commerce</title>
+  </head>
+  <body>
+    <div class="ctm-container row mx-0">
+      <header class="header col-12 col-sm-3 col-lg-2 p-0">
+        <nav class="ctm-navbar">
+          <div class="ctm-nav-header">
+            <a class="ctm-navbar-brand" href="#">
+              <img src="./images/Logo.png" alt="brand Logo" width="30" />
+              LOGO
+            </a>
+            <button class="ctm-navbar-toggler" type="button">
+              <img
+                class="hamburger"
+                src="./images/Hamburger.png"
+                alt="Hamburger button"
+              />
+              <img class="close" src="./images/Close.png" alt="close button" />
+            </button>
+          </div>
+          <div class="ctm-navbar-links">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">DASHBOARD</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">OUR SERVICES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">PRODUCTS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">NEWSLETTER</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">OFFERS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">CONTACT US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">LOG OUT</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <main class="col-12 col-sm-9 col-lg-10 px-0">
+        <!-- Hero section -->
+        <div class="ctm-hero position-relative">
+          <picture class="position-relative">
+            <source
+              media="(min-width:992px)"
+              srcset="./images/Banner_Desktop.png"
+            />
+            <source
+              media="(min-width:572px)"
+              srcset="./images/Banner_Tab.png"
+            />
+
+            <img
+              class="w-100"
+              src="./images/Banner_Mobile.png"
+              alt="Banner Image"
+            />
+          </picture>
+          <div
+            class="ctm-dashbord position-absolute top-50 start-0 translate-middle-y"
+          >
+            Dashboard
+          </div>
+        </div>
+        <!-- Heading Section-->
+        <div
+          class="ctm-heading row align-items-center px-5 mx-0 px-sm-3 px-lg-5 py-5"
+        >
+          <div class="ctm-title col-12 col-sm-4 px-0">
+            Heading 1 &ndash; <br />
+            Point of View
+          </div>
+          <div class="ctm-description col-12 col-sm-8 ps-sm-4 ps-lg-5 mt-2">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aenean
+            euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+            accumsan et viverra justo commodo.proin sodales pulvinar sic tempor.
+            <a class="text-decoration-none" href="#">Read More</a>
+          </div>
+        </div>
+        <!-- Products Section -->
+        <div
+          class="row row-cols-1 row-cols-sm-3 row-cols-lg-4 p-5 p-sm-3 p-lg-5 g-4 g-sm-2 g-lg-4"
+        >
+          <div>
+            <div class="card">
+              <div class="card-body">
+                <span class="card-tag">PRODUCT FAMILY</span>
+
+                <h5 class="card-title">Product Name</h5>
+
+                <p class="card-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Aenean euismod bibendum laoreet. Proin gravida dolor sit
+                </p>
+                <button
+                  type="button"
+                  class="btn card-btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  READ MORE
+                </button>
+              </div>
+            </div>
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content p-4">
+                  <div class="modal-header px-0">
+                    <div>
+                      <span class="modal-tag">PRODUCT FAMILY</span>
+
+                      <h5 class="modal-title mb-0">Product Name</h5>
+                    </div>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body px-0">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Aenean euismod bibendum laoreet. Proin gravida dolor sit
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Aenean euismod bibendum laoreet. Proin gravida dolor sit
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Aenean euismod bibendum laoreet. Proin gravida dolor sit
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Aenean euismod bibendum laoreet. Proin gravida dolor sit
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn modal-btn"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="card">
+              <div class="card-body">
+                <span class="card-tag">PRODUCT FAMILY</span>
+
+                <h5 class="card-title">Product Name</h5>
+
+                <p class="card-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Aenean euismod bibendum laoreet. Proin gravida dolor sit
+                </p>
+                <button
+                  type="button"
+                  class="btn card-btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  READ MORE
+                </button>
+              </div>
+            </div>
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content p-4">
+                  <div class="modal-header px-0">
+                    <div>
+                      <span class="modal-tag">PRODUCT FAMILY</span>
+
+                      <h5 class="modal-title mb-0">Product Name</h5>
+                    </div>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body px-0">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Aenean euismod bibendum laoreet. Proin gravida dolor sit
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Aenean euismod bibendum laoreet. Proin gravida dolor sit
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Aenean euismod bibendum laoreet. Proin gravida dolor sit
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Aenean euismod bibendum laoreet. Proin gravida dolor sit
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn modal-btn"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="card">
+              <div class="card-body">
+                <span class="card-tag">PRODUCT FAMILY</span>
+
+                <h5 class="card-title">Product Name</h5>
+
+                <p class="card-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Aenean euismod bibendum laoreet. Proin gravida dolor sit
+                </p>
+                <button
+                  type="button"
+                  class="btn card-btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  READ MORE
+                </button>
+              </div>
+            </div>
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content p-4">
+                  <div class="modal-header px-0">
+                    <div>
+                      <span class="modal-tag">PRODUCT FAMILY</span>
+
+                      <h5 class="modal-title mb-0">Product Name</h5>
+                    </div>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body px-0">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Aenean euismod bibendum laoreet. Proin gravida dolor sit
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Aenean euismod bibendum laoreet. Proin gravida dolor sit
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Aenean euismod bibendum laoreet. Proin gravida dolor sit
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Aenean euismod bibendum laoreet. Proin gravida dolor sit
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn modal-btn"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="card">
+              <div class="card-body">
+                <span class="card-tag">PRODUCT FAMILY</span>
+
+                <h5 class="card-title">Product Name</h5>
+
+                <p class="card-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Aenean euismod bibendum laoreet. Proin gravida dolor sit
+                </p>
+                <button
+                  type="button"
+                  class="btn card-btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  READ MORE
+                </button>
+              </div>
+            </div>
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content p-4">
+                  <div class="modal-header px-0">
+                    <div>
+                      <span class="modal-tag">PRODUCT FAMILY</span>
+
+                      <h5 class="modal-title mb-0">Product Name</h5>
+                    </div>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body px-0">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Aenean euismod bibendum laoreet. Proin gravida dolor sit
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Aenean euismod bibendum laoreet. Proin gravida dolor sit
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Aenean euismod bibendum laoreet. Proin gravida dolor sit
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Aenean euismod bibendum laoreet. Proin gravida dolor sit
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn modal-btn"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="card">
+              <div class="card-body">
+                <span class="card-tag">PRODUCT FAMILY</span>
+
+                <h5 class="card-title">Product Name</h5>
+
+                <p class="card-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Aenean euismod bibendum laoreet. Proin gravida dolor sit
+                </p>
+                <button
+                  type="button"
+                  class="btn card-btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  READ MORE
+                </button>
+              </div>
+            </div>
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content p-4">
+                  <div class="modal-header px-0">
+                    <div>
+                      <span class="modal-tag">PRODUCT FAMILY</span>
+
+                      <h5 class="modal-title mb-0">Product Name</h5>
+                    </div>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body px-0">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Aenean euismod bibendum laoreet. Proin gravida dolor sit
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Aenean euismod bibendum laoreet. Proin gravida dolor sit
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Aenean euismod bibendum laoreet. Proin gravida dolor sit
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Aenean euismod bibendum laoreet. Proin gravida dolor sit
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn modal-btn"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="card">
+              <div class="card-body">
+                <span class="card-tag">PRODUCT FAMILY</span>
+
+                <h5 class="card-title">Product Name</h5>
+
+                <p class="card-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Aenean euismod bibendum laoreet. Proin gravida dolor sit
+                </p>
+                <button
+                  type="button"
+                  class="btn card-btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  READ MORE
+                </button>
+              </div>
+            </div>
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content p-4">
+                  <div class="modal-header px-0">
+                    <div>
+                      <span class="modal-tag">PRODUCT FAMILY</span>
+
+                      <h5 class="modal-title mb-0">Product Name</h5>
+                    </div>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body px-0">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Aenean euismod bibendum laoreet. Proin gravida dolor sit
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Aenean euismod bibendum laoreet. Proin gravida dolor sit
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Aenean euismod bibendum laoreet. Proin gravida dolor sit
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Aenean euismod bibendum laoreet. Proin gravida dolor sit
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn modal-btn"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="card">
+              <div class="card-body">
+                <span class="card-tag">PRODUCT FAMILY</span>
+
+                <h5 class="card-title">Product Name</h5>
+
+                <p class="card-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Aenean euismod bibendum laoreet. Proin gravida dolor sit
+                </p>
+                <button
+                  type="button"
+                  class="btn card-btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  READ MORE
+                </button>
+              </div>
+            </div>
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content p-4">
+                  <div class="modal-header px-0">
+                    <div>
+                      <span class="modal-tag">PRODUCT FAMILY</span>
+
+                      <h5 class="modal-title mb-0">Product Name</h5>
+                    </div>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body px-0">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Aenean euismod bibendum laoreet. Proin gravida dolor sit
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Aenean euismod bibendum laoreet. Proin gravida dolor sit
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Aenean euismod bibendum laoreet. Proin gravida dolor sit
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Aenean euismod bibendum laoreet. Proin gravida dolor sit
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn modal-btn"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="card">
+              <div class="card-body">
+                <span class="card-tag">PRODUCT FAMILY</span>
+
+                <h5 class="card-title">Product Name</h5>
+
+                <p class="card-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Aenean euismod bibendum laoreet. Proin gravida dolor sit
+                </p>
+                <button
+                  type="button"
+                  class="btn card-btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  READ MORE
+                </button>
+              </div>
+            </div>
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content p-4">
+                  <div class="modal-header px-0">
+                    <div>
+                      <span class="modal-tag">PRODUCT FAMILY</span>
+
+                      <h5 class="modal-title mb-0">Product Name</h5>
+                    </div>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body px-0">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Aenean euismod bibendum laoreet. Proin gravida dolor sit
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Aenean euismod bibendum laoreet. Proin gravida dolor sit
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Aenean euismod bibendum laoreet. Proin gravida dolor sit
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Aenean euismod bibendum laoreet. Proin gravida dolor sit
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn modal-btn"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer
+      class="footer bg-dark text-end d-flex flex-column flex-sm-row justify-content-between py-4 px-3 px-sm-5"
+    >
+      <div class="contact-us">
+        <span>Need Help?</span>
+        <a href="#" class="default-link">Contact Us</a>
+      </div>
+      <div class="copyright">Copyright &copy; 2021. All right reserved</div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
